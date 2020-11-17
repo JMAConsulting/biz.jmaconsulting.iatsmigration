@@ -11,7 +11,7 @@ return [
       'version' => 3,
       'name' => 'Call IatsMigration.Importcustomers API',
       'description' => 'Call IatsMigration.Importcustomers API',
-      'run_frequency' => 'Daily',
+      'run_frequency' => 'Yearly',
       'api_entity' => 'IatsMigration',
       'api_action' => 'Importcustomers',
       'parameters' => 'table_name=iats_customer_import',

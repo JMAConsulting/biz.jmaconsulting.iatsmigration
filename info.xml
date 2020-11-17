@@ -2,7 +2,7 @@
 <extension key="biz.jmaconsulting.iatsmigration" type="module">
   <file>iatsmigration</file>
   <name>iATS to CiviCRM</name>
-  <description>Migrate Customers and Recurring Contributions from iATS to CiviCRM<</description>
+  <description>Migrate Customers and Recurring Contributions from iATS to CiviCRM</description>
   <license>AGPL-3.0</license>
   <maintainer>
     <author>Edsel Lopez</author>
