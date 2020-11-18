@@ -1,6 +1,6 @@
 # biz.jmaconsulting.iatsmigration
 
-* Developed for CanadaHelps
+# Developed for CanadaHelps
 
 The extension is licensed under [AGPL-3.0](LICENSE.txt).
 
