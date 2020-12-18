@@ -15,7 +15,7 @@ return [
       'api_entity' => 'IatsMigration',
       'api_action' => 'Importrecurring',
       'parameters' => 'table_name=iats_customer_cc
-type=cc or eft
+type=cc [this can be either one of cc or eft]
 token_table=iats_customer_list',
     ],
   ],

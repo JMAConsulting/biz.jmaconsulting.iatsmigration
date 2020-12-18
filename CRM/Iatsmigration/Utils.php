@@ -127,6 +127,11 @@ class CRM_Iatsmigration_Utils {
   }
 
   public static function importRecurring($params) {
+    // This should ideally be corrected in the CSV, adding here for now.
+    $intervalColumn = "`Interval (every 2 months or 3 months or every year)` AS FrequencyInterval";
+    if ($params['type'] == 'eft') {
+      $intervalColumn = "`Interval (every 2 months, every3 months, once a year)` AS FrequencyInterval";
+    }
     $iats = CRM_Core_DAO::executeQuery("SELECT 
       CustomerCode,
 CompanyName,
@@ -153,7 +158,7 @@ Amount,
 ScheduleType,
 `ScheduleDateNumber(Weekly/Monthly Only)` AS ScheduleDateNumber,
 `Next Run Date` AS NextRunDate,
-`Interval (every 2 months or 3 months or every year)` AS FrequencyInterval
+$intervalColumn
  FROM " . $params['table_name'])->fetchAll();
     $results = [];
     foreach ($iats as $customer) {
